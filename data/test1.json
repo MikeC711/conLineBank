@@ -1,0 +1,13 @@
+ {"OutForm" : "JSON", "NumRows" : 100, "ColArray" : [
+   { "Name": "CustID", "Type": "Integer", "RangeMin" : 10000.0, "RangeMax" : 60000.0, "RangeIncrement" : 1.0 },
+   { "Name": "FirstName", "Type": "FirstName", "Selection" : "Sequential" },
+   { "Name": "LastName", "Type": "LastName" },
+   { "Name": "Department", "Type" : "StringList", "Selection" : "Random", "Values" : [
+        "E725", "E325", "S295", "S595" ]},
+   { "Name": "Age", "Type": "Integer", "RangeMin" : 19.0, "RangeMax": 99.0, "Selection": "Random" },
+   { "Name": "Salary", "Type": "Double", "Precision" : 2, "RangeMin" : 10000.0, "RangeMax" : 1000000.0,
+   	"Selection": "Random" },
+   { "Name": "StreetAddr", "Type" : "Street", "HousesPerStreet" : 20, "MinHouseNum": 1111 },
+   { "Name": "City", "Type": "City", "Selection": "Random" },
+   { "Name": "State", "Type": "State"},
+   { "Name": "ZipCode", "Type" : "ZipCode" } ] }

@@ -1,0 +1,13 @@
+{"OutForm" : "JSON", "RowsPerKey" : 3, "ForeignFile" : "/Users/Michael/misc/data/json1.generatedData.dat", "ColArray" : [
+   { "Name": "CustID", "Type": "ForeignKey", "ForeignKey" : "CustID", "ForeignType": "Integer" },
+   { "Name": "AcctId", "Type": "Integer", "RangeMin" : 101.0, "RangeMax" : 999.0, "Selection": "Random" },
+   { "Name": "AcctType", "Type" : "StringList", "Selection" : "Random", "Values" : [ "CH", "SA", "CL", "ML" ]},
+   { "Name": "AcctBal", "Type" : "Double", "Precision" : 2, "RangeMin" : 50.0, "RangeMax" : 10000.0,
+      "Selection" : "Random", "IFCOND" : { "ColCompare" : "AcctType", "Operator" : "EQUAL", "OP1" : "CH" }},
+   { "Name": "AcctBal", "Type" : "Double", "Precision" : 2, "RangeMin" : 50.0, "RangeMax" : 10000.0,
+      "Selection" : "Random", "IFCOND" : { "ColCompare" : "AcctType", "Operator" : "EQUAL", "OP1" : "SA" }},
+   { "Name": "AcctBal", "Type" : "Double", "Precision" : 2, "RangeMin" : 500.0, "RangeMax" : 30000.0,
+      "Selection" : "Random", "IFCOND" : { "ColCompare" : "AcctType", "Operator" : "EQUAL", "OP1" : "CL" }},
+   { "Name": "AcctBal", "Type" : "Double", "Precision" : 2, "RangeMin" : 5000.0, "RangeMax" : 300000.0,
+      "Selection" : "Random", "IFCOND" : { "ColCompare" : "AcctType", "Operator" : "EQUAL", "OP1" : "ML" }}
+  ]}
